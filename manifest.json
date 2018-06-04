@@ -1,0 +1,37 @@
+{
+  "name": "Data.com Name Rearranger",
+  "version": "1.0",
+  "description": "Rearrange data.com last name and first name",
+  "permissions": ["declarativeContent","clipboardWrite","clipboardRead","notifications"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": {
+      "18": "images/re_18.png",
+      "24": "images/re_24.png",
+      "36": "images/re_36.png",
+      "48": "images/re_48.png",
+      "96": "images/re_96.png"
+    }
+  },
+  "icons": {
+    "18": "images/re_18.png",
+    "24": "images/re_24.png",
+    "36": "images/re_36.png",
+    "48": "images/re_48.png",
+    "96": "images/re_96.png"
+  },
+  "manifest_version": 2,
+  "commands": {
+    "name-rearrange": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "Command+Shift+X"
+      },
+      "description": "Rearrange Name",
+      "global": false
+    }
+  }
+}
